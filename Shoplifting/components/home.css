@@ -1,0 +1,120 @@
+/* home.css */
+
+.home-container {
+    width:200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #304294; /* Light background color */
+    padding-top: 80px; /* To account for the fixed header */
+  }
+  
+  .content-wrapper {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  
+  .image-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+    margin-left: -400px; /* Move the section slightly to the left */
+    margin-bottom: 100px;
+  }
+  
+  .image-text-section img {
+    width: 450px; /* Increase the size of the image */
+    height: auto;
+    margin-bottom: 20px;
+    animation: slideFromTop 1s ease-out;
+    transition: transform 1s ease; /* Smooth transition effect */
+}
+  
+  .image-text-section img:hover {
+    transform: rotate(0deg) scale(1.1); /* Tilt back to normal and slightly enlarge on hover */
+  }
+  
+  .image-text-section p {
+    font-size: 28px; /* Slightly increase font size */
+    color: #c410a3; /* Change text color to white for better contrast */
+    animation: slideFromBottom 1s ease-out;
+    max-width: 60ch; /* Limit the number of characters per line */
+    line-height: 1.5; /* Adjust line height for readability */
+    text-align: justify; /* Justify text for a cleaner look */
+
+  }
+  
+  @keyframes slideFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px) rotate(10deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotate(10deg);
+    }
+  }
+  
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .semi-circle-container {
+    position: absolute;
+    top: 30;
+    right: 0;
+    width: 50vh; /* Adjust the width to reduce its size */
+    height: 100vh; /* Adjust the height to reduce its size */
+    background-color: #fff;
+    border-top-left-radius: 50vh; /* Adjust the radius to match half of the new width */
+    border-bottom-left-radius: 50vh; /* Adjust the radius to match half of the new width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .semi-circle-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .semi-circle-content h2 {
+    font-size: 24px;
+    color: #304294;
+    margin-bottom: 10px;
+  }
+  
+  .semi-circle-content input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .semi-circle-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #304294;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .semi-circle-content button:hover {
+    background-color: #1e2d56;
+  }

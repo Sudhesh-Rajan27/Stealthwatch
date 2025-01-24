@@ -1,0 +1,35 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #304294;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .auth-links {
+    display: flex;
+    gap: 20px;
+    padding-right: 6%;
+  }
+  
+  .auth-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+  

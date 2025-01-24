@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#7fb2e5,#f0f2f5);/*#b869b5 #f7f7f7*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .whole {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .taskbar {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .taskbar-icon {
+    width: 300px; /* Adjust the size of the icon */
+    height: auto;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px; /* Increased padding for more space */
+    border: 1px solid #ddd;
+    border-radius: 15px; /* More rounded corners */
+    background: linear-gradient(135deg,#ffffff, #e0f7fa);/*#3165a5#dfe9f3*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    text-align: left;
+    margin-top: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .login-container:hover {
+    transform: translateY(-5px); /* Slightly lift the container on hover */
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+
+  .form-group {
+    margin-bottom: 20px; /* More space between form groups */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px; 
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+  }
+  
+  .form-control:focus {
+    border-color: #c410a3; 
+    box-shadow: 0 0 8px rgba(196, 16, 163, 0.3); 
+    outline: none;
+  }
+  
+.btn {
+    width: 100%;
+    padding: 14px 20px; /* Increased padding for better button size */
+    background: linear-gradient(135deg, #1067c4, #6679e3); /* Gradient background */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Slightly rounded button */
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #6679e3,  #1067c4); /* Reverse gradient on hover */
+    transform: scale(1.05)
+  }
+  .error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .success {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .end {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .end hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .end h6 {
+    margin: 10px 0;
+    color: #333;
+  }
+  

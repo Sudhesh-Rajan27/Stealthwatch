@@ -1,0 +1,53 @@
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #304294;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .action-button,
+  .toggle-button {
+    background-color: #304294;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .action-button:hover,
+  .toggle-button:hover {
+    background-color: #485f84;
+  }
+  
+  .toggle-button {
+    background-color: #b643b0;
+  }
+  
+  .toggle-button:hover {
+    background-color: #da70d6;
+  }
+  
